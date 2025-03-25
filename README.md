@@ -43,8 +43,8 @@ cp sample.config.ini config.ini
 [server]
 bind = *
 port = 8081
-tls_cert = 
-acme_challenge = 
+tls_cert =
+acme_challenge =
 
 [site]
 domain = http://meshview.bayme.sh
@@ -64,7 +64,7 @@ username = meshdev
 password = large4cats
 
 [database]
-connection_string = sqlite+aiosqlite:///packets.db
+connection_string = postgresql+asyncpg://user:password@localhost/dbname
 ```
 
 ## Running Meshview
